@@ -10,6 +10,20 @@ RASM conveys information through both antenna-combination indices and constellat
 
 The TVT paper extends the earlier WCNC work by introducing RASSK and further analyzing reliability and physical-layer security. This code release includes spectral-efficiency calculations and Monte Carlo bit-error-rate (BER) simulations for the proposed schemes and comparison baselines.
 
+## 💻 Code Description
+
+| File | Description |
+|---|---|
+| `bpcu_compar.m` | Calculates and plots the spectral efficiency, in bits per channel use (bpcu), of RASM, RASSK, RSM, RGSM, and RGSSK. |
+| `RASM.m` | Performs Monte Carlo BER simulation for RASM, conveying information through adaptive receive-antenna combinations and constellation symbols. |
+| `RASSK.m` | Performs Monte Carlo BER simulation for RASSK, conveying information through adaptive receive-antenna combinations without additional constellation modulation. |
+| `IRS_trans_SM.m` | Simulates the BER of RIS-assisted received spatial modulation, using a single selected receive-antenna index and a constellation symbol. |
+| `IRS_trans_SSK.m` | Simulates the BER of RIS-assisted received space shift keying, conveying information through a single selected receive-antenna index. |
+| `RGSM.m` | Simulates the BER of received generalized spatial modulation, using antenna combinations with a fixed number of selected antennas and constellation symbols. |
+| `RGSSK.m` | Simulates the BER of received generalized space shift keying, using antenna combinations with a fixed number of selected antennas without additional constellation modulation. |
+
+The BER simulation scripts employ maximum-likelihood (ML) detection and plot BER versus SNR. Simulation parameters can be adjusted near the beginning of each script.
+
 ## 📄 Papers
 
 **IEEE TVT 2026 — Journal Paper**

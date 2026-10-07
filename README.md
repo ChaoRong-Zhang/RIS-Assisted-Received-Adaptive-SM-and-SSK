@@ -59,3 +59,6 @@ C. Zhang, H. Xu, B. K. Ng, C.-T. Lam, and K. Wang, “RIS-assisted received adap
 This code is provided for non-commercial academic research under the terms in `LICENSE`. Non-commercial academic use, modification, and redistribution are permitted subject to those terms.
 
 Commercial use requires separate written permission from the copyright holders. The code license does not apply to the associated papers or publisher-owned materials.
+
+## 📜 Email Address
+zcryyds666@gmail.com
